@@ -15,7 +15,7 @@ Install all necessary dependencies
 ```bash
 npm install
 ```
-![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/bafaa4a9-1b3d-44a6-9c7d-4955063a7885)
+
 
 ## Downloading and running ganache
 
@@ -25,10 +25,12 @@ Please install Ganache using the following link:
 [Ganache install](https://trufflesuite.com/ganache/)
 
 After installing ganache, open it and you will see the following:
-![image](https://github.com/IbrahimSiddiqui007/DigiPass/ReadMeImages/87603789/d8e804ad-7e4e-45fd-b2a3-01ec26d4f0e9)
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/51f08d4e-a719-42e0-8b41-e62236c651c1)
+
 
 In your case however, you will not have a created workspace.
 
 Next, click on the "New workspace" button and you will be presented with the following screen:
-![image](https://github.com/IbrahimSiddiqui007/DigiPass/ReadMeImages/87603789/09884a91-1bf2-455a-b449-6206dc03aadc)
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/9fc94c70-68a9-4013-bd41-b91d117da727)
+
 
