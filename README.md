@@ -202,7 +202,52 @@ truffle migrate
 
 
 ## Connecting the blockchain and the database to the application
+The Backend (Database and Blockchain):
+The server folder runs the backend for the application.
+To run the backend you have to update the mongodb server path. We have an existing database and the documents will be added there. 
+In the routes folder, the auth_routes file has the code for adding the biometrics to the blockchain. 
+In the auth_routes, scroll down to the fingerprint api, here is where the fingerprint data is added to the blockchain.
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/7b3b8d2b-abca-41a0-bf50-e1713b9c9043)
+Please change the ganache_url to your RPC server. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/9974ad36-57e8-4ce5-95cb-b6d42177c593)
+Change the contract address to the contract address of 'test' thats stored in ganache. you can access this contract address by going to the contracts tab inside ganache and clicking on the name of the contract called test. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/82a44fdd-c359-48eb-98a3-0f0da6e95cac)
 
+--
+For getting the values from the blockchain, you can go to the Get.js file inside the blockchain folder. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/c1c48ff8-115d-477a-8058-6e1cc22aaf6a)
+Change the ganache url to your RPC server.
+Change the contract address to the address of the contract named test.
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/cfa0484e-322b-4dfb-9a0a-0cf5e0082b44)
+Change the value of target address to the meta mask wallet ID. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/457f24e3-8e51-4b20-b918-b4bea310ee8d)
+Use one of these accounts.
+Please keep this terminal running. we will use a new terminal for the frontend. 
+
+Frontend (Navigation between screens):
+Once you run npm start on the root folder, we will connect the frontend and view it on Android Studio. 
+You can install android studio for windows or ios. once the installation has happened, 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/4bdfd140-8d52-412e-b4b0-753d32f2c5b2)
+Click on More actions> Virtual Device Manager. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/7316d7bf-b46c-4a83-8997-80d2b8513e19)
+Create a device. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/ae1f0dae-ca03-4a02-9f54-a36dd282b3a8)
+Select the Pixel6a and press next.
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/4fc4e2de-ed38-4499-b307-387492c8ba02)
+You will see a small download button next to the API34. Download that and move to next
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/90b230f8-a66c-49cc-961d-1e53cdf4bfcc)
+Click on finish. 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/df028d4d-873f-454b-94c7-8806016fdc8c)
+Click on the run button. 
+
+Now in the main terminal, please write these commands
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/9ed3943e-c0bc-43de-ac51-6fb3a5d5e38c)
+After a few min, you will see these lines 
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/1c3c54f7-0296-47e2-a47b-1b5ee11a0753)
+Press a to open inside android. This will open inside the android studio. 
+
+It will install expo go inside the virtual device manager and then it will open the frontend
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/3dea2b99-f100-4a0a-9dda-5807ff1d4dd5)
 
 
 ## Running the application
