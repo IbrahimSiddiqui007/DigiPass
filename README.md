@@ -65,7 +65,7 @@ truffle init Blckchain
 
 #### Now within the Truffle-config.js file delete everything and paste the following.
 
-```js
+```javascript
 
 module.exports = {
   networks: {
@@ -89,7 +89,110 @@ module.exports = {
 #### Change the IP address to one specified by the RPC server in ganache. Your RPC server IP address might be different.
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/cb6b4576-3aa5-4b7c-8cbb-92c8cb4d6e49)
 
+#### Now create 4 files. 2 In the contracts folder and 2 in the migrations folder. Keep the names of the files exactly as I have them especially the files in the migration folder.
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/97b80594-b087-471b-9433-c67748f988eb)
+
+#### As for the content of the files 
+#### Migrations.sol
+
+```solidity
+pragma solidity ^0.5.16;
+
+contract Migrations {
+  address public owner;
+  uint256 public last_completed_migration;
+
+  modifier restricted() {
+    if (msg.sender == owner) _;
+  }
+
+  constructor() public {
+    owner = msg.sender;
+  }
+
+  function setCompleted(uint completed) public restricted {
+    last_completed_migration = completed;
+  }
+
+  function upgrade(address new_address) public restricted {
+    Migrations upgraded = Migrations(new_address);
+    upgraded.setCompleted(last_completed_migration);
+  }
+}
+```
+#### Test.sol
+
+```solidity
+pragma solidity ^0.5.16;
+
+contract test {
+    struct bio {
+        uint uid; // Unified ID
+        string Bval; // Biometric value
+        string location; // Which location of the type of fingerprint
+        string biometricType; // Which fingerprint is it (as a string)
+    }
+
+    mapping(address => bio[]) private BioRecords;
+
+    event BiometricStored(address indexed owner, uint uid, string Bval, string location, string biometricType, uint256 timestamp);
+
+    function addBD(uint uid, string memory Bval, string memory location, string memory biometricType) public {
+        bio memory record = bio({
+            uid: uid,
+            Bval: Bval,
+            location: location,
+            biometricType: biometricType
+        });
+
+        BioRecords[msg.sender].push(record);
+        emit BiometricStored(msg.sender, uid, Bval, location, biometricType, block.timestamp);
+    }
+
+    function getBiometricDataCount() public view returns (uint256) {
+        return BioRecords[msg.sender].length;
+    }
+
+    function getBiometricData(uint256 index) public view returns (uint, string memory, string memory, string memory) {
+        require(index < BioRecords[msg.sender].length, "Index out of bounds");
+        bio storage record = BioRecords[msg.sender][index];
+        return (record.uid, record.Bval, record.location, record.biometricType);
+    }
+}
+```
+
+#### 1_initial_migration.js
+
+```javascript
+const Migrations = artifacts.require("./Migrations.sol");
 
 
+module.exports = function(deployer) {
+  deployer.deploy(Migrations);
+
+};
+```
+
+#### 2_deploy_contracts.js
+
+```javascript
+const test = artifacts.require("test");
 
 
+module.exports = function(deployer) {
+  deployer.deploy(test);
+
+};
+```
+
+#### Now go into the terminal and CD into the folder called blckchain
+
+```bash
+cd blckchain
+
+truffle migrate
+```
+
+#### hopefully after running that you will get the following text in the terminal.
+
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/a9d6c4ce-f7a9-45d1-bc0c-54023fda90b8)
