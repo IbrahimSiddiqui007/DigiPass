@@ -2,6 +2,7 @@
 
 ## Downloading the files
 
-'''bash
-npm install
+```bash
+git clone https://github.com/IbrahimSiddiqui007/DigiPass.git
+```
 
