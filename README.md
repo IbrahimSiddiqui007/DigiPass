@@ -15,6 +15,7 @@ Install all necessary dependencies
 ```bash
 npm install
 ```
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/bafaa4a9-1b3d-44a6-9c7d-4955063a7885)
 
 ## Downloading and running ganache
 
