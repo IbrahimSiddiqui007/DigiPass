@@ -47,13 +47,49 @@ npm install
 
 ### Deploying the contract
 
-#### After getting ganache running go back to the files and run the following command
+#### After getting ganache running go back to the files and run the following command in the terminal
 
 ```bash
 npm install -g truffle
 ```
 
-#### After it is finished installing
+#### After it is finished installing run the following command
+
+```bash
+truffle init Blckchain
+```
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/678a7433-777b-4508-81a2-3c0f8754a715)
+
+#### After the above command has finish running open the newly created folder in your editor of choice. Mine is visual studio code. These are the files and folders that are created with.
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/17248c2d-7794-449a-a19f-d1aad1368cb9)
+
+#### Now within the Truffle-config.js file delete everything and paste the following.
+
+```js
+
+module.exports = {
+  networks: {
+    development: {
+      host: "192.168.1.86",
+      port: 7545,
+      network_id: "*", // Match any network id
+    }
+  },
+  solc: {
+    settings: {
+      optimizer: {
+        enabled: true, // Default: false
+        runs: 200      // Default: 200
+      },
+    }
+  }
+};
+
+```
+#### Change the IP address to one specified by the RPC server in ganache. Your RPC server IP address might be different.
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/cb6b4576-3aa5-4b7c-8cbb-92c8cb4d6e49)
+
+
 
 
 
