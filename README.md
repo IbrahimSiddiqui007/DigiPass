@@ -21,7 +21,7 @@ npm install
 
 ### Installing ganache and getting it running
 
-####Please install Ganache using the following link:
+#### Please install Ganache using the following link:
 [Ganache install](https://trufflesuite.com/ganache/)
 
 #### After installing ganache, open it and you will see the following:
