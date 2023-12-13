@@ -193,6 +193,39 @@ cd blckchain
 truffle migrate
 ```
 
-#### hopefully after running that you will get the following text in the terminal.
+#### Hopefully after running that you will get the following text in the terminal. 
 
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/a9d6c4ce-f7a9-45d1-bc0c-54023fda90b8)
+
+#### If you open ganache you will see the following under the contracts section
+![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/87603789/a44a772b-eb62-4967-8aed-9c559a85be65)
+
+
+## Connecting the blockchain and the database to the application
+
+
+
+## Running the application
+#### Now create 2 fresh terminal sessions
+
+#### Run the following commmands in both sessions
+
+```bash
+CD Digipass
+```
+
+#### Now in the first terminal session run the following command
+
+```bash
+cd server
+
+npm start
+```
+
+#### While doing that run the following commands in the second terminal session
+
+```bash
+cd screens
+
+npm start
+```
