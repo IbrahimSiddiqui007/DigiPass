@@ -270,20 +270,27 @@ After a few min, you will see these lines
 Press a to open inside android. This will open inside the android studio. 
 
 It will install expo go inside the virtual device manager 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/fc613c02-7704-4d96-9531-16922ef12cc5)
 
 and it will open the frontend of the application
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/ceea0e81-ddc7-4fe4-a66d-7aff898df314)
 
 Now we have to add a fingerprint to this device to show the working of the biometrics. To do this,
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/822d1917-e18d-411d-8b45-248a89642887)
+
 Click on the home button.
 
 Pull the screen up to go to the applications page. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/b35e4a9c-a7dd-41ba-b71f-f22871abb548)
+
 Click on settings. 
 
 Search for Security and click on app security. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/cbd06d57-6ef6-46da-aef6-528852492f35)
 
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/aadcf417-8f99-403b-b0eb-2a4789c142c6)
@@ -293,76 +300,103 @@ Search for Security and click on app security.
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/88d79e3a-db52-45b2-a668-82e530464cd9)
 
 Click on done. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/0d0d0acf-47dc-42dc-9846-9232504bc8d0)
 
 Click on Pixel Imprint to add the fingerprint to the device. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/eb7e2f94-583d-403c-8f64-ed42538c6a3c)
 
 You will be taken to this page to add ypur fingerprint. Click on the 3 dots on the controls. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/f737a38c-b8f6-462e-af9f-e7a2b47b0187)
 
 Click on fingerprint.
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/ffe26cdb-0f1e-4973-8fa7-b27f6bff4f12)
 
 Click on the touch sensor button. this will add the fingerprint 1 data to the device. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/7e687e27-3bbc-4454-b0e7-9044fda0a94b)
 
 it will look like this. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/20d241db-3183-4e7e-8daa-ca4577f228b7)
 
 Click on that button until it says the confirmation. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/efe11acb-2995-4a96-94b4-6066653aa77b)
 
 You will see something like this
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/04807be5-d527-4b60-bc82-28171e899348)
 
 Now go back to the codebase and press a on the terminal to open the application on expo go
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/732d8966-0c47-4484-9edd-aaa624ad5e2e)
 
 After clicking login, you will have to press signup as there is no user at the moment in the system. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/beb09a3b-4d9f-4fd5-ad50-79482ba9c16c)
 
 You will have to fill in the details here. There are error cases such as the password not matching or the user already existing or all the fields arent full. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/f47ce0c7-ab1e-42a6-84b5-744902d05c6d)
 
 This is how it will look like after being filled. For the meta mask wallet ID, please use the accounts provided in ganache. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/eda892e7-4849-417e-8e0d-9e2f2515ffbd)
 
 These are the 2 accounts, you can use any of them. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/f4286e38-3613-4910-b039-48b81ab8022b)
 
 After submitting, you will be taken to the biometrics page where the user has to input their biometrics that will be stored in the blockchain eventually. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/6a69a90d-dddf-409e-8fac-50b5db974350)
 
 Once you press on the scan biometrics button, you can press the touch sensor from the extended controls. this will act as if the user is providing their fingerprints. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/acc6a367-8e52-4d38-873c-8a0a03d11e33)
 
 After this, press the studentID button to move to the next page. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/eb75f043-c1a6-465f-bede-1881c02c4289)
 
 As you can see the TX count on the 2nd account has increased by 1 indicating that there has been an addition to the blockchain
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/ca6d9f35-7673-431e-ab96-b8f986b54c9b)
+
 The TX count is at 14 right now as we have only 2 accounts to test our blockchain with so the biometrics kept adding onto these accounts. In the later stages, the accounts will increase. 
 
 Submit the student ID and you will get an alert for the confirmation. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/d2a1d64c-d6a3-4760-ab46-b04630717a34)
 
 This indicates that the data has been fetched from the organisation and the student has been successfully registered in the system.Now press on go to login button to login to the application. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/8b9d80cb-a72e-4524-96af-0f578a69222f)
 
+
 Click on national ID to login with. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/614a63d1-a15a-48a8-9ee4-47a88f5b0313)
 
+
 Enter the ID and password you had provided with during sign up. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/69a5cf0a-83dc-4770-ac97-3b91e8a731df)
 
 Click on profile. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/d7634725-18f0-40b7-94f8-c74cd4e978f8)
 
 Click on view documents. 
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/b3bd11f7-4b35-435a-8a85-2153536fc349)
 
-This will show all the documents that the user has in their account. For this user, they have only 1 document. 
+This will show all the documents that the user has in their account. For this user, they have only 1 document.
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/29988970-3823-4508-addc-7a3f8ad6997c)
 
 Scan the biometrics to get access to the document. Press the touch sensor in the extended controls to give the fingerprint. 
@@ -370,6 +404,7 @@ Scan the biometrics to get access to the document. Press the touch sensor in the
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/13ef76a7-03d7-4935-a9b5-ce5f11af3803)
 
 After authenticaion, the template for the document will look like this
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/184e4706-6f65-48d1-b2b0-aa96b5af52e9)
 
 
