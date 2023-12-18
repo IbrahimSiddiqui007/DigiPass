@@ -293,6 +293,8 @@ Search for Security and click on app security.
 
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/cbd06d57-6ef6-46da-aef6-528852492f35)
 
+Click on device unlock.
+
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/aadcf417-8f99-403b-b0eb-2a4789c142c6)
 
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/3f27443c-ebc3-4faa-ad21-0885ee53606e)
