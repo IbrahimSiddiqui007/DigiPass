@@ -311,7 +311,7 @@ Click on Pixel Imprint to add the fingerprint to the device.
 
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/eb7e2f94-583d-403c-8f64-ed42538c6a3c)
 
-You will be taken to this page to add ypur fingerprint. Click on the 3 dots on the controls. 
+You will be taken to this page to add your fingerprint. Click on the 3 dots on the controls. 
 
 ![image](https://github.com/IbrahimSiddiqui007/DigiPass/assets/80529354/f737a38c-b8f6-462e-af9f-e7a2b47b0187)
 
